@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Modern font */
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #2c3e50; /* Dark theme */
+    background-color: #2c3e50;
     color: white;
     text-align: center;
     display: flex;
@@ -65,7 +65,7 @@ h1 {
 }
 
 .box:hover {
-    background-color: #ecf0f1; /* Light hover effect */
+    background-color: #ecf0f1;
     transform: scale(1.05);
 }
 
@@ -97,7 +97,7 @@ h1 {
 #msg {
     font-size: 2rem;
     font-weight: bold;
-    color: #f1c40f; /* Gold color for winner message */
+    color: #f1c40f;
 }
 
 .msg-container {
@@ -117,4 +117,36 @@ h1 {
 
 .hide {
     display: none;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .turn-indicator {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .box {
+        height: 25vmin;
+        width: 25vmin;
+        font-size: 10vmin;
+    }
+
+    #reset-btn,
+    #new-btn {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+    }
+
+    .msg-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
 }
