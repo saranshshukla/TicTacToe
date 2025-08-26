@@ -90,7 +90,7 @@ const checkWinner = () => {
     let pos3 = boxes[c].innerText;
 
     if (pos1 !== "" && pos1 === pos2 && pos2 === pos3) {
-      showWinner(pos1);
+      showWinner(pos1, pattern);
       return;
     }
   }
@@ -106,3 +106,4 @@ const checkWinner = () => {
 // Event Listeners
 newGameBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
+
